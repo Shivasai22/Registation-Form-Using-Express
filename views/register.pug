@@ -1,0 +1,19 @@
+html
+    head
+        title Register page
+    body
+        if message
+            h3 #{message}
+        h2 Register Form Page    
+        form(action="/register" method='POST')
+            label UserName:
+            input(type="text" name='uname' value="" required placeholder="Enter the username")
+            br
+            label Password:
+            input(type="password" name='pwd' value="" required placeholder="Enter the password")
+            br
+            label Email:
+            input(type="email" name='email' value="" placeholder="Enter the email")
+            br
+            button(type="Submit") register
+        button(type="button" onclick="location.href='/Signin'") Login

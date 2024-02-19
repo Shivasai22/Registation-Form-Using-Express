@@ -1,0 +1,16 @@
+html 
+    head    
+        title login page 
+    body 
+        //if(message)
+        //  h3 #{message}
+        h2 Login/Signin Form Page
+        form(action="/Signin" method='POST')
+        label UserName : 
+            input(type="text" name='uname' required placeholder='Enter the username') 
+            br
+            label Password:
+            input(type="password" name='pwd' required placeholder='Enter the password') 
+            br
+            button(type='submit' ) Log In  
+             a(href='/register') Register
